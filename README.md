@@ -17,7 +17,7 @@ API calls follow this syntax:
 
 `$client->apigroup->action($queryString);`
 
-* `queryString` - (*as required*) API endpoint parameters as key-value pairs.
+* `queryString` - (*as required*) API method parameters as key-value pairs.
 
 ### Examples
 
@@ -178,8 +178,8 @@ $response = $client->chat->postMessage(array(
 * [usergroups->update](https://api.slack.com/methods/usergroups.update)
 
 ### usergroups.users
-* [usergroups->users.list](https://api.slack.com/methods/usergroups.users.list)
-* [usergroups->users.update](https://api.slack.com/methods/usergroups.users.update)
+* [usergroups->users->list](https://api.slack.com/methods/usergroups.users.list)
+* [usergroups->users->update](https://api.slack.com/methods/usergroups.users.update)
 
 ### users
 * [users->getPresence](https://api.slack.com/methods/users.getPresence)
