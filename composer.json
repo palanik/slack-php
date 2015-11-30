@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "palanik/wrapi": "dev-master"
+        "palanik/wrapi": "^0.1.4"
     },
     "autoload": {
         "psr-4": {
