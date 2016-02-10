@@ -3,399 +3,352 @@
 		"method": "GET",
 		"path": "api.test"
 	},
-
 	"auth.test": {
 		"method": "GET",
 		"path": "auth.test"
 	},
-
 	"channels.archive": {
 		"method": "GET",
 		"path": "channels.archive"
 	},
-
 	"channels.create": {
 		"method": "GET",
 		"path": "channels.create"
 	},
-
 	"channels.history": {
 		"method": "GET",
 		"path": "channels.history"
 	},
-
 	"channels.info": {
 		"method": "GET",
 		"path": "channels.info"
 	},
-
 	"channels.invite": {
 		"method": "GET",
 		"path": "channels.invite"
 	},
-
 	"channels.join": {
 		"method": "GET",
 		"path": "channels.join"
 	},
-
 	"channels.kick": {
 		"method": "GET",
 		"path": "channels.kick"
 	},
-
 	"channels.leave": {
 		"method": "GET",
 		"path": "channels.leave"
 	},
-
 	"channels.list": {
 		"method": "GET",
 		"path": "channels.list"
 	},
-
 	"channels.mark": {
 		"method": "GET",
 		"path": "channels.mark"
 	},
-
 	"channels.rename": {
 		"method": "GET",
 		"path": "channels.rename"
 	},
-
 	"channels.setPurpose": {
 		"method": "GET",
 		"path": "channels.setPurpose"
 	},
-
 	"channels.setTopic": {
 		"method": "GET",
 		"path": "channels.setTopic"
 	},
-
 	"channels.unarchive": {
 		"method": "GET",
 		"path": "channels.unarchive"
 	},
-
 	"chat.delete": {
 		"method": "GET",
 		"path": "chat.delete"
 	},
-
 	"chat.postMessage": {
 		"method": "GET",
 		"path": "chat.postMessage"
 	},
-
 	"chat.update": {
 		"method": "GET",
 		"path": "chat.update"
 	},
-
+	"dnd.endDnd": {
+		"method": "GET",
+		"path": "dnd.endDnd"
+	},
+	"dnd.endSnooze": {
+		"method": "GET",
+		"path": "dnd.endSnooze"
+	},
+	"dnd.info": {
+		"method": "GET",
+		"path": "dnd.info"
+	},
+	"dnd.setSnooze": {
+		"method": "GET",
+		"path": "dnd.setSnooze"
+	},
+	"dnd.teamInfo": {
+		"method": "GET",
+		"path": "dnd.teamInfo"
+	},
 	"emoji.list": {
 		"method": "GET",
 		"path": "emoji.list"
 	},
-
+	"files.comments.add": {
+		"method": "GET",
+		"path": "files.comments.add"
+	},
+	"files.comments.delete": {
+		"method": "GET",
+		"path": "files.comments.delete"
+	},
+	"files.comments.edit": {
+		"method": "GET",
+		"path": "files.comments.edit"
+	},
 	"files.delete": {
 		"method": "GET",
 		"path": "files.delete"
 	},
-
 	"files.info": {
 		"method": "GET",
 		"path": "files.info"
 	},
-
 	"files.list": {
 		"method": "GET",
 		"path": "files.list"
 	},
-
 	"files.upload": {
 		"method": "GET",
 		"path": "files.upload"
 	},
-
 	"groups.archive": {
 		"method": "GET",
 		"path": "groups.archive"
 	},
-
 	"groups.close": {
 		"method": "GET",
 		"path": "groups.close"
 	},
-
 	"groups.create": {
 		"method": "GET",
 		"path": "groups.create"
 	},
-
 	"groups.createChild": {
 		"method": "GET",
 		"path": "groups.createChild"
 	},
-
 	"groups.history": {
 		"method": "GET",
 		"path": "groups.history"
 	},
-
 	"groups.info": {
 		"method": "GET",
 		"path": "groups.info"
 	},
-
 	"groups.invite": {
 		"method": "GET",
 		"path": "groups.invite"
 	},
-
 	"groups.kick": {
 		"method": "GET",
 		"path": "groups.kick"
 	},
-
 	"groups.leave": {
 		"method": "GET",
 		"path": "groups.leave"
 	},
-
 	"groups.list": {
 		"method": "GET",
 		"path": "groups.list"
 	},
-
 	"groups.mark": {
 		"method": "GET",
 		"path": "groups.mark"
 	},
-
 	"groups.open": {
 		"method": "GET",
 		"path": "groups.open"
 	},
-
 	"groups.rename": {
 		"method": "GET",
 		"path": "groups.rename"
 	},
-
 	"groups.setPurpose": {
 		"method": "GET",
 		"path": "groups.setPurpose"
 	},
-
 	"groups.setTopic": {
 		"method": "GET",
 		"path": "groups.setTopic"
 	},
-
 	"groups.unarchive": {
 		"method": "GET",
 		"path": "groups.unarchive"
 	},
-
 	"im.close": {
 		"method": "GET",
 		"path": "im.close"
 	},
-
 	"im.history": {
 		"method": "GET",
 		"path": "im.history"
 	},
-
 	"im.list": {
 		"method": "GET",
 		"path": "im.list"
 	},
-
 	"im.mark": {
 		"method": "GET",
 		"path": "im.mark"
 	},
-
 	"im.open": {
 		"method": "GET",
 		"path": "im.open"
 	},
-
 	"mpim.close": {
 		"method": "GET",
 		"path": "mpim.close"
 	},
-
 	"mpim.history": {
 		"method": "GET",
 		"path": "mpim.history"
 	},
-
 	"mpim.list": {
 		"method": "GET",
 		"path": "mpim.list"
 	},
-
 	"mpim.mark": {
 		"method": "GET",
 		"path": "mpim.mark"
 	},
-
 	"mpim.open": {
 		"method": "GET",
 		"path": "mpim.open"
 	},
-
 	"oauth.access": {
 		"method": "GET",
 		"path": "oauth.access"
 	},
-
 	"pins.add": {
 		"method": "GET",
 		"path": "pins.add"
 	},
-
 	"pins.list": {
 		"method": "GET",
 		"path": "pins.list"
 	},
-
 	"pins.remove": {
 		"method": "GET",
 		"path": "pins.remove"
 	},
-
 	"reactions.add": {
 		"method": "GET",
 		"path": "reactions.add"
 	},
-
 	"reactions.get": {
 		"method": "GET",
 		"path": "reactions.get"
 	},
-
 	"reactions.list": {
 		"method": "GET",
 		"path": "reactions.list"
 	},
-
 	"reactions.remove": {
 		"method": "GET",
 		"path": "reactions.remove"
 	},
-
 	"rtm.start": {
 		"method": "GET",
 		"path": "rtm.start"
 	},
-
 	"search.all": {
 		"method": "GET",
 		"path": "search.all"
 	},
-
 	"search.files": {
 		"method": "GET",
 		"path": "search.files"
 	},
-
 	"search.messages": {
 		"method": "GET",
 		"path": "search.messages"
 	},
-
 	"stars.add": {
 		"method": "GET",
 		"path": "stars.add"
 	},
-
 	"stars.list": {
 		"method": "GET",
 		"path": "stars.list"
 	},
-
 	"stars.remove": {
 		"method": "GET",
 		"path": "stars.remove"
 	},
-
 	"team.accessLogs": {
 		"method": "GET",
 		"path": "team.accessLogs"
 	},
-
 	"team.info": {
 		"method": "GET",
 		"path": "team.info"
 	},
-
 	"team.integrationLogs": {
 		"method": "GET",
 		"path": "team.integrationLogs"
 	},
-
 	"usergroups.create": {
 		"method": "GET",
 		"path": "usergroups.create"
 	},
-
 	"usergroups.disable": {
 		"method": "GET",
 		"path": "usergroups.disable"
 	},
-
 	"usergroups.enable": {
 		"method": "GET",
 		"path": "usergroups.enable"
 	},
-
 	"usergroups.list": {
 		"method": "GET",
 		"path": "usergroups.list"
 	},
-
 	"usergroups.update": {
 		"method": "GET",
 		"path": "usergroups.update"
 	},
-
 	"usergroups.users.list": {
 		"method": "GET",
 		"path": "usergroups.users.list"
 	},
-
 	"usergroups.users.update": {
 		"method": "GET",
 		"path": "usergroups.users.update"
 	},
-
 	"users.getPresence": {
 		"method": "GET",
 		"path": "users.getPresence"
 	},
-
 	"users.info": {
 		"method": "GET",
 		"path": "users.info"
 	},
-
 	"users.list": {
 		"method": "GET",
 		"path": "users.list"
 	},
-
 	"users.setActive": {
 		"method": "GET",
 		"path": "users.setActive"
 	},
-
 	"users.setPresence": {
 		"method": "GET",
 		"path": "users.setPresence"
-	}	
+	}
 }

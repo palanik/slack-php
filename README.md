@@ -97,8 +97,20 @@ $response = $client->chat->postMessage(array(
 * [chat->postMessage](https://api.slack.com/methods/chat.postMessage)
 * [chat->update](https://api.slack.com/methods/chat.update)
 
+### dnd
+* [dnd->endDnd](https://api.slack.com/methods/dnd.endDnd)
+* [dnd->endSnooze](https://api.slack.com/methods/dnd.endSnooze)
+* [dnd->info](https://api.slack.com/methods/dnd.info)
+* [dnd->setSnooze](https://api.slack.com/methods/dnd.setSnooze)
+* [dnd->teamInfo](https://api.slack.com/methods/dnd.teamInfo)
+
 ### emoji
 * [emoji->list](https://api.slack.com/methods/emoji.list)
+
+### files.comments
+* [files->comments->add](https://api.slack.com/methods/files.comments.add)
+* [files->comments->delete](https://api.slack.com/methods/files.comments.delete)
+* [files->comments->edit](https://api.slack.com/methods/files.comments.edit)
 
 ### files
 * [files->delete](https://api.slack.com/methods/files.delete)
