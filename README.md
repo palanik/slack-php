@@ -2,6 +2,9 @@
 
 Client interface for accessing [Slack Web API](https://api.slack.com/web).
 
+[![Latest Stable Version](https://poser.pugx.org/wrapi/slack/v/stable)](https://packagist.org/packages/wrapi/slack)
+[![License](https://poser.pugx.org/wrapi/slack/license)](https://github.com/palanik/slack-php/blob/master/LICENSE)
+
 ## Usage
 Create a client object to connect to Slack Web API [methods](https://api.slack.com/methods).
 
