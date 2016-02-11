@@ -13,7 +13,7 @@
         "guzzle"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/wrapi/slack-php",
+    "homepage": "https://github.com/palanik/slack-php",
     "authors": [
         {
             "name": "wrapi"
