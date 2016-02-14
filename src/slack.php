@@ -2,7 +2,7 @@
 
 namespace wrapi\slack;
 
-class slack extends wrapi\wrapi {
+class slack extends \wrapi\wrapi {
     public function __construct($token) {
 
         $opts = array(
