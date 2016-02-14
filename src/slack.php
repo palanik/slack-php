@@ -1,8 +1,8 @@
 <?php
 
-namespace wrapi;
+namespace wrapi\slack;
 
-class slack extends wrapi {
+class slack extends wrapi\wrapi {
     public function __construct($token) {
 
         $opts = array(

@@ -9,7 +9,7 @@ Client interface for accessing [Slack Web API](https://api.slack.com/web).
 Create a client object to connect to Slack Web API [methods](https://api.slack.com/methods).
 
 ```PHP
-$client = new wrapi\slack(SLACK_API_TOKEN);
+$client = new wrapi\slack\slack(SLACK_API_TOKEN);
 
 // Now you are ready to make API calls to Slack.
 ```
