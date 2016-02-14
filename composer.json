@@ -16,12 +16,12 @@
     "homepage": "https://github.com/palanik/slack-php",
     "authors": [
         {
-            "name": "wrapi"
+            "name": "palanik"
         }
     ],
     "require": {
         "php": ">=5.5.0",
-        "palanik/wrapi": "^0.1.4"
+        "palanik/wrapi": "^0.1.5"
     },
     "autoload": {
         "psr-4": {
