@@ -123,6 +123,14 @@
 		"method": "GET",
 		"path": "files.list"
 	},
+	"files.revokePublicURL": {
+		"method": "GET",
+		"path": "files.revokePublicURL"
+	},
+	"files.sharedPublicURL": {
+		"method": "GET",
+		"path": "files.sharedPublicURL"
+	},
 	"files.upload": {
 		"method": "GET",
 		"path": "files.upload"
