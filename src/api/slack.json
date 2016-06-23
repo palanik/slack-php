@@ -3,9 +3,17 @@
 		"method": "GET",
 		"path": "api.test"
 	},
+	"auth.revoke": {
+		"method": "GET",
+		"path": "auth.revoke"
+	},
 	"auth.test": {
 		"method": "GET",
 		"path": "auth.test"
+	},
+	"bots.info": {
+		"method": "GET",
+		"path": "bots.info"
 	},
 	"channels.archive": {
 		"method": "GET",
@@ -66,6 +74,10 @@
 	"chat.delete": {
 		"method": "GET",
 		"path": "chat.delete"
+	},
+	"chat.meMessage": {
+		"method": "GET",
+		"path": "chat.meMessage"
 	},
 	"chat.postMessage": {
 		"method": "GET",
@@ -271,6 +283,26 @@
 		"method": "GET",
 		"path": "reactions.remove"
 	},
+	"reminders.add": {
+		"method": "GET",
+		"path": "reminders.add"
+	},
+	"reminders.complete": {
+		"method": "GET",
+		"path": "reminders.complete"
+	},
+	"reminders.delete": {
+		"method": "GET",
+		"path": "reminders.delete"
+	},
+	"reminders.info": {
+		"method": "GET",
+		"path": "reminders.info"
+	},
+	"reminders.list": {
+		"method": "GET",
+		"path": "reminders.list"
+	},
 	"rtm.start": {
 		"method": "GET",
 		"path": "rtm.start"
@@ -303,6 +335,10 @@
 		"method": "GET",
 		"path": "team.accessLogs"
 	},
+	"team.billableInfo": {
+		"method": "GET",
+		"path": "team.billableInfo"
+	},
 	"team.info": {
 		"method": "GET",
 		"path": "team.info"
@@ -310,6 +346,10 @@
 	"team.integrationLogs": {
 		"method": "GET",
 		"path": "team.integrationLogs"
+	},
+	"team.profile.get": {
+		"method": "GET",
+		"path": "team.profile.get"
 	},
 	"usergroups.create": {
 		"method": "GET",
@@ -343,6 +383,10 @@
 		"method": "GET",
 		"path": "users.getPresence"
 	},
+	"users.identity": {
+		"method": "GET",
+		"path": "users.identity"
+	},
 	"users.info": {
 		"method": "GET",
 		"path": "users.info"
@@ -358,5 +402,13 @@
 	"users.setPresence": {
 		"method": "GET",
 		"path": "users.setPresence"
+	},
+	"users.profile.get": {
+		"method": "GET",
+		"path": "users.profile.get"
+	},
+	"users.profile.set": {
+		"method": "GET",
+		"path": "users.profile.set"
 	}
 }

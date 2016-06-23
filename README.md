@@ -77,7 +77,11 @@ $response = $client->chat->postMessage(array(
 * [api->test](https://api.slack.com/methods/api.test)
 
 ### auth
+* [auth->revoke](https://api.slack.com/methods/auth.revoke)
 * [auth->test](https://api.slack.com/methods/auth.test)
+
+### bots
+* [bots->info](https://api.slack.com/methods/bots.info)
 
 ### channels
 * [channels->archive](https://api.slack.com/methods/channels.archive)
@@ -97,6 +101,7 @@ $response = $client->chat->postMessage(array(
 
 ### chat
 * [chat->delete](https://api.slack.com/methods/chat.delete)
+* [chat->meMessage](https://api.slack.com/methods/chat.meMessage)
 * [chat->postMessage](https://api.slack.com/methods/chat.postMessage)
 * [chat->update](https://api.slack.com/methods/chat.update)
 
@@ -169,6 +174,13 @@ $response = $client->chat->postMessage(array(
 * [reactions->list](https://api.slack.com/methods/reactions.list)
 * [reactions->remove](https://api.slack.com/methods/reactions.remove)
 
+### reminders
+* [reminders->add](https://api.slack.com/methods/reminders.add)
+* [reminders->complete](https://api.slack.com/methods/reminders.complete)
+* [reminders->delete](https://api.slack.com/methods/reminders.delete)
+* [reminders->info](https://api.slack.com/methods/reminders.info)
+* [reminders->list](https://api.slack.com/methods/reminders.list)
+
 #### rtm
 * [rtm->start](https://api.slack.com/methods/rtm.start)
 
@@ -184,8 +196,12 @@ $response = $client->chat->postMessage(array(
 
 #### team
 * [team->accessLogs](https://api.slack.com/methods/team.accessLogs)
+* [team->billableInfo](https://api.slack.com/methods/team.billableInfo)
 * [team->info](https://api.slack.com/methods/team.info)
 * [team->integrationLogs](https://api.slack.com/methods/team.integrationLogs)
+
+### team.profile
+* [team->profile->get](https://api.slack.com/methods/team.profile.get)
 
 #### usergroups
 * [usergroups->create](https://api.slack.com/methods/usergroups.create)
@@ -200,10 +216,15 @@ $response = $client->chat->postMessage(array(
 
 ### users
 * [users->getPresence](https://api.slack.com/methods/users.getPresence)
+* [users->identity](https://api.slack.com/methods/users.identity)
 * [users->info](https://api.slack.com/methods/users.info)
 * [users->list](https://api.slack.com/methods/users.list)
 * [users->setActive](https://api.slack.com/methods/users.setActive)
 * [users->setPresence](https://api.slack.com/methods/users.setPresence)
+
+### users.profile
+* [users->profile->get](https://api.slack.com/methods/users.profile.get)
+* [users->profile->set](https://api.slack.com/methods/users.profile.set)
 
 ## License
 
