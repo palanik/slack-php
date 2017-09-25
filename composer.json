@@ -9,6 +9,7 @@
         "API",
         "api wrapper",
         "slack-api",
+        "slack-web-api",
         "slack wrapper",
         "guzzle"
     ],

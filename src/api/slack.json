@@ -3,6 +3,14 @@
 		"method": "GET",
 		"path": "api.test"
 	},
+	"apps.permissions.info": {
+		"method": "GET",
+		"path": "apps.permissions.info"
+	},
+	"apps.permissions.request": {
+		"method": "GET",
+		"path": "apps.permissions.request"
+	},
 	"auth.revoke": {
 		"method": "GET",
 		"path": "auth.revoke"
@@ -83,6 +91,10 @@
 		"method": "GET",
 		"path": "chat.meMessage"
 	},
+	"chat.postEphemeral": {
+		"method": "GET",
+		"path": "chat.postEphemeral"
+	},
 	"chat.postMessage": {
 		"method": "GET",
 		"path": "chat.postMessage"
@@ -94,6 +106,74 @@
 	"chat.update": {
 		"method": "GET",
 		"path": "chat.update"
+	},
+	"conversations.archive": {
+		"method": "GET",
+		"path": "conversations.archive"
+	},
+	"conversations.close": {
+		"method": "GET",
+		"path": "conversations.close"
+	},
+	"conversations.create": {
+		"method": "GET",
+		"path": "conversations.create"
+	},
+	"conversations.history": {
+		"method": "GET",
+		"path": "conversations.history"
+	},
+	"conversations.info": {
+		"method": "GET",
+		"path": "conversations.info"
+	},
+	"conversations.invite": {
+		"method": "GET",
+		"path": "conversations.invite"
+	},
+	"conversations.join": {
+		"method": "GET",
+		"path": "conversations.join"
+	},
+	"conversations.kick": {
+		"method": "GET",
+		"path": "conversations.kick"
+	},
+	"conversations.leave": {
+		"method": "GET",
+		"path": "conversations.leave"
+	},
+	"conversations.list": {
+		"method": "GET",
+		"path": "conversations.list"
+	},
+	"conversations.members": {
+		"method": "GET",
+		"path": "conversations.members"
+	},
+	"conversations.open": {
+		"method": "GET",
+		"path": "conversations.open"
+	},
+	"conversations.rename": {
+		"method": "GET",
+		"path": "conversations.rename"
+	},
+	"conversations.replies": {
+		"method": "GET",
+		"path": "conversations.replies"
+	},
+	"conversations.setPurpose": {
+		"method": "GET",
+		"path": "conversations.setPurpose"
+	},
+	"conversations.setTopic": {
+		"method": "GET",
+		"path": "conversations.setTopic"
+	},
+	"conversations.unarchive": {
+		"method": "GET",
+		"path": "conversations.unarchive"
 	},
 	"dnd.endDnd": {
 		"method": "GET",
@@ -158,10 +238,6 @@
 	"groups.archive": {
 		"method": "GET",
 		"path": "groups.archive"
-	},
-	"groups.close": {
-		"method": "GET",
-		"path": "groups.close"
 	},
 	"groups.create": {
 		"method": "GET",
@@ -275,6 +351,10 @@
 		"method": "GET",
 		"path": "oauth.access"
 	},
+	"oauth.token": {
+		"method": "GET",
+		"path": "oauth.token"
+	},
 	"pins.add": {
 		"method": "GET",
 		"path": "pins.add"
@@ -322,6 +402,10 @@
 	"reminders.list": {
 		"method": "GET",
 		"path": "reminders.list"
+	},
+	"rtm.connect": {
+		"method": "GET",
+		"path": "rtm.connect"
 	},
 	"rtm.start": {
 		"method": "GET",

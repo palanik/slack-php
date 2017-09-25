@@ -6,10 +6,10 @@ Client interface for accessing [Slack Web API](https://api.slack.com/web).
 [![License](https://poser.pugx.org/wrapi/slack/license)](https://github.com/palanik/slack-php/blob/master/LICENSE)
 
 ## Usage
-Create a client object to connect to Slack Web API [methods](https://api.slack.com/methods).
+Create a slack client with API token to connect to Slack Web API.
 
 ```PHP
-$client = new wrapi\slack\slack(SLACK_API_TOKEN);
+$slack = new wrapi\slack\slack(SLACK_API_TOKEN);
 
 // Now you are ready to make API calls to Slack.
 ```
@@ -18,7 +18,7 @@ Provide API parameters to the calls.
 
 API calls follow this syntax:
 
-`$client->apigroup->action($queryString);`
+`$slack->apigroup->action($queryString);`
 
 * `queryString` - (*as required*) API method parameters as key-value pairs.
 
@@ -26,22 +26,22 @@ API calls follow this syntax:
 
 #### Lists custom emoji for a team.
 ```PHP
-$emojis = $client->emoji->list();
+$emojis = $slack->emoji->list();
 ```
 
 #### Lists all channels in a Slack team.
 ```PHP
-$channels = $client->channels->list(array("exclude_archived" => 1));
+$channels = $slack->channels->list(array("exclude_archived" => 1));
 ```
 
 #### Gets information about a private group.
 ```PHP
-$myGroup = $client->groups->info(array("channel" => "G1234567890"));
+$myGroup = $slack->groups->info(array("channel" => "G1234567890"));
 ```
 
 #### Adds a reaction to an item.
 ```PHP
-$client->reactions->add(array(
+$slack->reactions->add(array(
     "name" => "thumbsup",
     "file" => "F1234567890",
     "file_comment" => "Fc1234567890",
@@ -53,12 +53,12 @@ $client->reactions->add(array(
 
 #### Gets information about a user.
 ```PHP
-$user = $client->users->info(array("user" => "U1234567890"));
+$user = $slack->users->info(array("user" => "U1234567890"));
 ```
 
 #### Post chat messages to Slack.
 ```PHP
-$response = $client->chat->postMessage(array(
+$response = $slack->chat->postMessage(array(
     "channel" => "#general",
     "text" => "Hello <@u12345678|world>!",
     "username" => "Wrapi Bot",
@@ -75,6 +75,10 @@ $response = $client->chat->postMessage(array(
 
 ### api
 * [api->test](https://api.slack.com/methods/api.test)
+
+### apps.permissions
+* [apps->permissions->info](https://api.slack.com/methods/apps.permissions.info)
+* [apps->permissions->request](https://api.slack.com/methods/apps.permissions.request)
 
 ### auth
 * [auth->revoke](https://api.slack.com/methods/auth.revoke)
@@ -103,9 +107,29 @@ $response = $client->chat->postMessage(array(
 ### chat
 * [chat->delete](https://api.slack.com/methods/chat.delete)
 * [chat->meMessage](https://api.slack.com/methods/chat.meMessage)
+* [chat->postEphemeral](https://api.slack.com/methods/chat.postEphemeral)
 * [chat->postMessage](https://api.slack.com/methods/chat.postMessage)
 * [chat->unfurl](https://api.slack.com/methods/chat.unfurl)
 * [chat->update](https://api.slack.com/methods/chat.update)
+
+### conversations
+* [conversations->archive](https://api.slack.com/methods/conversations.archive)
+* [conversations->close](https://api.slack.com/methods/conversations.close)
+* [conversations->create](https://api.slack.com/methods/conversations.create)
+* [conversations->history](https://api.slack.com/methods/conversations.history)
+* [conversations->info](https://api.slack.com/methods/conversations.info)
+* [conversations->invite](https://api.slack.com/methods/conversations.invite)
+* [conversations->join](https://api.slack.com/methods/conversations.join)
+* [conversations->kick](https://api.slack.com/methods/conversations.kick)
+* [conversations->leave](https://api.slack.com/methods/conversations.leave)
+* [conversations->list](https://api.slack.com/methods/conversations.list)
+* [conversations->members](https://api.slack.com/methods/conversations.members)
+* [conversations->open](https://api.slack.com/methods/conversations.open)
+* [conversations->rename](https://api.slack.com/methods/conversations.rename)
+* [conversations->replies](https://api.slack.com/methods/conversations.replies)
+* [conversations->setPurpose](https://api.slack.com/methods/conversations.setPurpose)
+* [conversations->setTopic](https://api.slack.com/methods/conversations.setTopic)
+* [conversations->unarchive](https://api.slack.com/methods/conversations.unarchive)
 
 ### dnd
 * [dnd->endDnd](https://api.slack.com/methods/dnd.endDnd)
@@ -132,7 +156,6 @@ $response = $client->chat->postMessage(array(
 
 ### groups
 * [groups->archive](https://api.slack.com/methods/groups.archive)
-* [groups->close](https://api.slack.com/methods/groups.close)
 * [groups->create](https://api.slack.com/methods/groups.create)
 * [groups->createChild](https://api.slack.com/methods/groups.createChild)
 * [groups->history](https://api.slack.com/methods/groups.history)
@@ -167,6 +190,7 @@ $response = $client->chat->postMessage(array(
 
 ### oauth
 * [oauth->access](https://api.slack.com/methods/oauth.access)
+* [oauth->token](https://api.slack.com/methods/oauth.token)
 
 ### pins
 * [pins->add](https://api.slack.com/methods/pins.add)
@@ -187,6 +211,7 @@ $response = $client->chat->postMessage(array(
 * [reminders->list](https://api.slack.com/methods/reminders.list)
 
 #### rtm
+* [rtm->connect](https://api.slack.com/methods/rtm.connect)
 * [rtm->start](https://api.slack.com/methods/rtm.start)
 
 ### search
