@@ -106,6 +106,7 @@ $response = $slack->chat->postMessage(array(
 
 ### chat
 * [chat->delete](https://api.slack.com/methods/chat.delete)
+* [chat->getPermalink](https://api.slack.com/methods/chat.getPermalink)
 * [chat->meMessage](https://api.slack.com/methods/chat.meMessage)
 * [chat->postEphemeral](https://api.slack.com/methods/chat.postEphemeral)
 * [chat->postMessage](https://api.slack.com/methods/chat.postMessage)
