@@ -87,6 +87,10 @@
 		"method": "GET",
 		"path": "chat.delete"
 	},
+	"chat.getPermalink": {
+		"method": "GET",
+		"path": "chat.getPermalink"
+	},
 	"chat.meMessage": {
 		"method": "GET",
 		"path": "chat.meMessage"
