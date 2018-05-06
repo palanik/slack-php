@@ -80,6 +80,12 @@ $response = $slack->chat->postMessage(array(
 * [apps->permissions->info](https://api.slack.com/methods/apps.permissions.info)
 * [apps->permissions->request](https://api.slack.com/methods/apps.permissions.request)
 
+### apps.permissions.resources
+* [apps->permissions->resources.list](https://api.slack.com/methods/apps.permissions.resources.list)
+
+### apps.permissions.scopes
+* [apps->permissions->scopes.list](https://api.slack.com/methods/apps.permissions.scopes.list)
+
 ### auth
 * [auth->revoke](https://api.slack.com/methods/auth.revoke)
 * [auth->test](https://api.slack.com/methods/auth.test)
@@ -132,6 +138,9 @@ $response = $slack->chat->postMessage(array(
 * [conversations->setTopic](https://api.slack.com/methods/conversations.setTopic)
 * [conversations->unarchive](https://api.slack.com/methods/conversations.unarchive)
 
+### dialog
+* [dialog->open](https://api.slack.com/methods/dialog.open)
+
 ### dnd
 * [dnd->endDnd](https://api.slack.com/methods/dnd.endDnd)
 * [dnd->endSnooze](https://api.slack.com/methods/dnd.endSnooze)
@@ -180,6 +189,9 @@ $response = $slack->chat->postMessage(array(
 * [im->mark](https://api.slack.com/methods/im.mark)
 * [im->open](https://api.slack.com/methods/im.open)
 * [im->replies](https://api.slack.com/methods/im.replies)
+
+### migration
+* [migration->exchange](https://api.slack.com/methods/migration.exchange)
 
 ### mpim
 * [mpim->close](https://api.slack.com/methods/mpim.close)
@@ -246,11 +258,13 @@ $response = $slack->chat->postMessage(array(
 * [usergroups->users->update](https://api.slack.com/methods/usergroups.users.update)
 
 ### users
+* [users->conversations](https://api.slack.com/methods/users.conversations)
 * [users->deletePhoto](https://api.slack.com/methods/users.deletePhoto)
 * [users->getPresence](https://api.slack.com/methods/users.getPresence)
 * [users->identity](https://api.slack.com/methods/users.identity)
 * [users->info](https://api.slack.com/methods/users.info)
 * [users->list](https://api.slack.com/methods/users.list)
+* [users->lookupByEmail](https://api.slack.com/methods/users.lookupByEmail)
 * [users->setActive](https://api.slack.com/methods/users.setActive)
 * [users->setPhoto](https://api.slack.com/methods/users.setPhoto)
 * [users->setPresence](https://api.slack.com/methods/users.setPresence)

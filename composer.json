@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "palanik/wrapi": "^0.1.6"
+        "palanik/wrapi": "^0.1.7"
     },
     "autoload": {
         "psr-4": {
