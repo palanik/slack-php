@@ -19,6 +19,18 @@
 		"method": "GET",
 		"path": "apps.permissions.scopes.list"
 	},
+	"apps.permissions.users.list": {
+		"method": "GET",
+		"path": "apps.permissions.users.list"
+	},
+	"apps.permissions.users.request": {
+		"method": "GET",
+		"path": "apps.permissions.users.request"
+	},
+	"apps.uninstall": {
+		"method": "GET",
+		"path": "apps.uninstall"
+	},
 	"auth.revoke": {
 		"method": "GET",
 		"path": "auth.revoke"

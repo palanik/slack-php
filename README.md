@@ -1,6 +1,6 @@
 # Slack Web API Wrapper
 
-Client interface for accessing [Slack Web API](https://api.slack.com/web).
+**Simplest** Client interface for accessing [Slack Web API](https://api.slack.com/web).
 
 [![Latest Stable Version](https://poser.pugx.org/wrapi/slack/v/stable)](https://packagist.org/packages/wrapi/slack)
 [![License](https://poser.pugx.org/wrapi/slack/license)](https://github.com/palanik/slack-php/blob/master/LICENSE)
@@ -21,6 +21,15 @@ API calls follow this syntax:
 `$slack->apigroup->action($queryString);`
 
 * `queryString` - (*as required*) API method parameters as key-value pairs.
+
+#### Post a message:
+```PHP
+$slack->chat->postMessage(array(
+    "channel" => "#general",
+    "text" => "Hello World!"
+  )
+)
+```
 
 ### Examples
 
@@ -85,6 +94,13 @@ $response = $slack->chat->postMessage(array(
 
 ### apps.permissions.scopes
 * [apps->permissions->scopes.list](https://api.slack.com/methods/apps.permissions.scopes.list)
+
+### apps.permissions.users
+* [apps->permissions->users->list](https://api.slack.com/methods/apps.permissions.users.list)
+* [apps->permissions->users->request](https://api.slack.com/methods/apps.permissions.users.request)
+
+### apps
+* [apps->uninstall](https://api.slack.com/methods/apps.uninstall)
 
 ### auth
 * [auth->revoke](https://api.slack.com/methods/auth.revoke)
