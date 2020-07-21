@@ -1,6 +1,186 @@
 {
-	"api.test": {
+	"admin.apps.approve": {
+		"method": "POST",
+		"path": "admin.apps.approve"
+	},
+	"admin.apps.restrict": {
+		"method": "POST",
+		"path": "admin.apps.restrict"
+	},
+	"admin.apps.approved.list": {
 		"method": "GET",
+		"path": "admin.apps.approved.list"
+	},
+	"admin.apps.requests.list": {
+		"method": "GET",
+		"path": "admin.apps.requests.list"
+	},
+	"admin.apps.restricted.list": {
+		"method": "GET",
+		"path": "admin.apps.restricted.list"
+	},
+	"admin.conversations.restrictAccess.addGroup": {
+		"method": "GET",
+		"path": "admin.conversations.restrictAccess.addGroup"
+	},
+	"admin.conversations.restrictAccess.listGroups": {
+		"method": "GET",
+		"path": "admin.conversations.restrictAccess.listGroups"
+	},
+	"admin.conversations.restrictAccess.removeGroup": {
+		"method": "GET",
+		"path": "admin.conversations.restrictAccess.removeGroup"
+	},
+	"admin.conversations.setTeams": {
+		"method": "POST",
+		"path": "admin.conversations.setTeams"
+	},
+	"admin.conversations.whitelist.add": {
+		"method": "GET",
+		"path": "admin.conversations.whitelist.add"
+	},
+	"admin.conversations.whitelist.listGroupsLinkedToChannel": {
+		"method": "GET",
+		"path": "admin.conversations.whitelist.listGroupsLinkedToChannel"
+	},
+	"admin.conversations.whitelist.remove": {
+		"method": "GET",
+		"path": "admin.conversations.whitelist.remove"
+	},
+	"admin.emoji.add": {
+		"method": "GET",
+		"path": "admin.emoji.add"
+	},
+	"admin.emoji.addAlias": {
+		"method": "GET",
+		"path": "admin.emoji.addAlias"
+	},
+	"admin.emoji.list": {
+		"method": "GET",
+		"path": "admin.emoji.list"
+	},
+	"admin.emoji.remove": {
+		"method": "GET",
+		"path": "admin.emoji.remove"
+	},
+	"admin.emoji.rename": {
+		"method": "GET",
+		"path": "admin.emoji.rename"
+	},
+	"admin.inviteRequests.approve": {
+		"method": "POST",
+		"path": "admin.inviteRequests.approve"
+	},
+	"admin.inviteRequests.deny": {
+		"method": "POST",
+		"path": "admin.inviteRequests.deny"
+	},
+	"admin.inviteRequests.list": {
+		"method": "POST",
+		"path": "admin.inviteRequests.list"
+	},
+	"admin.inviteRequests.approved.list": {
+		"method": "POST",
+		"path": "admin.inviteRequests.approved.list"
+	},
+	"admin.inviteRequests.denied.list": {
+		"method": "POST",
+		"path": "admin.inviteRequests.denied.list"
+	},
+	"admin.teams.admins.list": {
+		"method": "GET",
+		"path": "admin.teams.admins.list"
+	},
+	"admin.teams.create": {
+		"method": "POST",
+		"path": "admin.teams.create"
+	},
+	"admin.teams.list": {
+		"method": "POST",
+		"path": "admin.teams.list"
+	},
+	"admin.teams.owners.list": {
+		"method": "GET",
+		"path": "admin.teams.owners.list"
+	},
+	"admin.teams.settings.info": {
+		"method": "POST",
+		"path": "admin.teams.settings.info"
+	},
+	"admin.teams.settings.setDefaultChannels": {
+		"method": "GET",
+		"path": "admin.teams.settings.setDefaultChannels"
+	},
+	"admin.teams.settings.setDescription": {
+		"method": "POST",
+		"path": "admin.teams.settings.setDescription"
+	},
+	"admin.teams.settings.setDiscoverability": {
+		"method": "POST",
+		"path": "admin.teams.settings.setDiscoverability"
+	},
+	"admin.teams.settings.setIcon": {
+		"method": "GET",
+		"path": "admin.teams.settings.setIcon"
+	},
+	"admin.teams.settings.setName": {
+		"method": "POST",
+		"path": "admin.teams.settings.setName"
+	},
+	"admin.usergroups.addChannels": {
+		"method": "POST",
+		"path": "admin.usergroups.addChannels"
+	},
+	"admin.usergroups.addTeams": {
+		"method": "POST",
+		"path": "admin.usergroups.addTeams"
+	},
+	"admin.usergroups.listChannels": {
+		"method": "POST",
+		"path": "admin.usergroups.listChannels"
+	},
+	"admin.usergroups.removeChannels": {
+		"method": "POST",
+		"path": "admin.usergroups.removeChannels"
+	},
+	"admin.users.assign": {
+		"method": "POST",
+		"path": "admin.users.assign"
+	},
+	"admin.users.invite": {
+		"method": "POST",
+		"path": "admin.users.invite"
+	},
+	"admin.users.list": {
+		"method": "POST",
+		"path": "admin.users.list"
+	},
+	"admin.users.remove": {
+		"method": "POST",
+		"path": "admin.users.remove"
+	},
+	"admin.users.setAdmin": {
+		"method": "POST",
+		"path": "admin.users.setAdmin"
+	},
+	"admin.users.setExpiration": {
+		"method": "POST",
+		"path": "admin.users.setExpiration"
+	},
+	"admin.users.setOwner": {
+		"method": "POST",
+		"path": "admin.users.setOwner"
+	},
+	"admin.users.setRegular": {
+		"method": "POST",
+		"path": "admin.users.setRegular"
+	},
+	"admin.users.session.reset": {
+		"method": "POST",
+		"path": "admin.users.session.reset"
+	},
+	"api.test": {
+		"method": "POST",
 		"path": "api.test"
 	},
 	"apps.permissions.info": {
@@ -36,19 +216,43 @@
 		"path": "auth.revoke"
 	},
 	"auth.test": {
-		"method": "GET",
+		"method": "POST",
 		"path": "auth.test"
 	},
 	"bots.info": {
 		"method": "GET",
 		"path": "bots.info"
 	},
+	"calls.add": {
+		"method": "POST",
+		"path": "calls.add"
+	},
+	"calls.end": {
+		"method": "POST",
+		"path": "calls.end"
+	},
+	"calls.info": {
+		"method": "POST",
+		"path": "calls.info"
+	},
+	"calls.update": {
+		"method": "POST",
+		"path": "calls.update"
+	},
+	"calls.participants.add": {
+		"method": "POST",
+		"path": "calls.participants.add"
+	},
+	"calls.participants.remove": {
+		"method": "POST",
+		"path": "calls.participants.remove"
+	},
 	"channels.archive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.archive"
 	},
 	"channels.create": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.create"
 	},
 	"channels.history": {
@@ -60,19 +264,19 @@
 		"path": "channels.info"
 	},
 	"channels.invite": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.invite"
 	},
 	"channels.join": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.join"
 	},
 	"channels.kick": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.kick"
 	},
 	"channels.leave": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.leave"
 	},
 	"channels.list": {
@@ -80,11 +284,11 @@
 		"path": "channels.list"
 	},
 	"channels.mark": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.mark"
 	},
 	"channels.rename": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.rename"
 	},
 	"channels.replies": {
@@ -92,55 +296,67 @@
 		"path": "channels.replies"
 	},
 	"channels.setPurpose": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.setPurpose"
 	},
 	"channels.setTopic": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.setTopic"
 	},
 	"channels.unarchive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "channels.unarchive"
 	},
 	"chat.delete": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.delete"
+	},
+	"chat.deleteScheduledMessage": {
+		"method": "POST",
+		"path": "chat.deleteScheduledMessage"
 	},
 	"chat.getPermalink": {
 		"method": "GET",
 		"path": "chat.getPermalink"
 	},
 	"chat.meMessage": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.meMessage"
 	},
 	"chat.postEphemeral": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.postEphemeral"
 	},
 	"chat.postMessage": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.postMessage"
 	},
+	"chat.scheduleMessage": {
+		"method": "POST",
+		"path": "chat.scheduleMessage"
+	},
 	"chat.unfurl": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.unfurl"
 	},
 	"chat.update": {
-		"method": "GET",
+		"method": "POST",
 		"path": "chat.update"
 	},
+	"chat.scheduledMessages.list": {
+		"method": "POST",
+		"path": "chat.scheduledMessages.list"
+	},
 	"conversations.archive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.archive"
 	},
 	"conversations.close": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.close"
 	},
 	"conversations.create": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.create"
 	},
 	"conversations.history": {
@@ -152,35 +368,39 @@
 		"path": "conversations.info"
 	},
 	"conversations.invite": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.invite"
 	},
 	"conversations.join": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.join"
 	},
 	"conversations.kick": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.kick"
 	},
 	"conversations.leave": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.leave"
 	},
 	"conversations.list": {
 		"method": "GET",
 		"path": "conversations.list"
 	},
+	"conversations.mark": {
+		"method": "POST",
+		"path": "conversations.mark"
+	},
 	"conversations.members": {
 		"method": "GET",
 		"path": "conversations.members"
 	},
 	"conversations.open": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.open"
 	},
 	"conversations.rename": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.rename"
 	},
 	"conversations.replies": {
@@ -188,27 +408,27 @@
 		"path": "conversations.replies"
 	},
 	"conversations.setPurpose": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.setPurpose"
 	},
 	"conversations.setTopic": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.setTopic"
 	},
 	"conversations.unarchive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "conversations.unarchive"
 	},
 	"dialog.open": {
-		"method": "GET",
+		"method": "POST",
 		"path": "dialog.open"
 	},
 	"dnd.endDnd": {
-		"method": "GET",
+		"method": "POST",
 		"path": "dnd.endDnd"
 	},
 	"dnd.endSnooze": {
-		"method": "GET",
+		"method": "POST",
 		"path": "dnd.endSnooze"
 	},
 	"dnd.info": {
@@ -227,20 +447,12 @@
 		"method": "GET",
 		"path": "emoji.list"
 	},
-	"files.comments.add": {
-		"method": "GET",
-		"path": "files.comments.add"
-	},
 	"files.comments.delete": {
-		"method": "GET",
+		"method": "POST",
 		"path": "files.comments.delete"
 	},
-	"files.comments.edit": {
-		"method": "GET",
-		"path": "files.comments.edit"
-	},
 	"files.delete": {
-		"method": "GET",
+		"method": "POST",
 		"path": "files.delete"
 	},
 	"files.info": {
@@ -252,23 +464,47 @@
 		"path": "files.list"
 	},
 	"files.revokePublicURL": {
-		"method": "GET",
+		"method": "POST",
 		"path": "files.revokePublicURL"
 	},
 	"files.sharedPublicURL": {
-		"method": "GET",
+		"method": "POST",
 		"path": "files.sharedPublicURL"
 	},
 	"files.upload": {
-		"method": "GET",
+		"method": "POST",
 		"path": "files.upload"
 	},
-	"groups.archive": {
+	"files.remote.add": {
 		"method": "GET",
+		"path": "files.remote.add"
+	},
+	"files.remote.info": {
+		"method": "GET",
+		"path": "files.remote.info"
+	},
+	"files.remote.list": {
+		"method": "GET",
+		"path": "files.remote.list"
+	},
+	"files.remote.remove": {
+		"method": "GET",
+		"path": "files.remote.remove"
+	},
+	"files.remote.share": {
+		"method": "GET",
+		"path": "files.remote.share"
+	},
+	"files.remote.update": {
+		"method": "GET",
+		"path": "files.remote.update"
+	},
+	"groups.archive": {
+		"method": "POST",
 		"path": "groups.archive"
 	},
 	"groups.create": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.create"
 	},
 	"groups.createChild": {
@@ -284,15 +520,15 @@
 		"path": "groups.info"
 	},
 	"groups.invite": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.invite"
 	},
 	"groups.kick": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.kick"
 	},
 	"groups.leave": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.leave"
 	},
 	"groups.list": {
@@ -300,15 +536,15 @@
 		"path": "groups.list"
 	},
 	"groups.mark": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.mark"
 	},
 	"groups.open": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.open"
 	},
 	"groups.rename": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.rename"
 	},
 	"groups.replies": {
@@ -316,19 +552,19 @@
 		"path": "groups.replies"
 	},
 	"groups.setPurpose": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.setPurpose"
 	},
 	"groups.setTopic": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.setTopic"
 	},
 	"groups.unarchive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "groups.unarchive"
 	},
 	"im.close": {
-		"method": "GET",
+		"method": "POST",
 		"path": "im.close"
 	},
 	"im.history": {
@@ -340,11 +576,11 @@
 		"path": "im.list"
 	},
 	"im.mark": {
-		"method": "GET",
+		"method": "POST",
 		"path": "im.mark"
 	},
 	"im.open": {
-		"method": "GET",
+		"method": "POST",
 		"path": "im.open"
 	},
 	"im.replies": {
@@ -356,7 +592,7 @@
 		"path": "migration.exchange"
 	},
 	"mpim.close": {
-		"method": "GET",
+		"method": "POST",
 		"path": "mpim.close"
 	},
 	"mpim.history": {
@@ -368,11 +604,11 @@
 		"path": "mpim.list"
 	},
 	"mpim.mark": {
-		"method": "GET",
+		"method": "POST",
 		"path": "mpim.mark"
 	},
 	"mpim.open": {
-		"method": "GET",
+		"method": "POST",
 		"path": "mpim.open"
 	},
 	"mpim.replies": {
@@ -380,15 +616,19 @@
 		"path": "mpim.replies"
 	},
 	"oauth.access": {
-		"method": "GET",
+		"method": "POST",
 		"path": "oauth.access"
 	},
 	"oauth.token": {
-		"method": "GET",
+		"method": "POST",
 		"path": "oauth.token"
 	},
+	"oauth.v2.access": {
+		"method": "POST",
+		"path": "oauth.v2.access"
+	},
 	"pins.add": {
-		"method": "GET",
+		"method": "POST",
 		"path": "pins.add"
 	},
 	"pins.list": {
@@ -396,11 +636,11 @@
 		"path": "pins.list"
 	},
 	"pins.remove": {
-		"method": "GET",
+		"method": "POST",
 		"path": "pins.remove"
 	},
 	"reactions.add": {
-		"method": "GET",
+		"method": "POST",
 		"path": "reactions.add"
 	},
 	"reactions.get": {
@@ -412,19 +652,19 @@
 		"path": "reactions.list"
 	},
 	"reactions.remove": {
-		"method": "GET",
+		"method": "POST",
 		"path": "reactions.remove"
 	},
 	"reminders.add": {
-		"method": "GET",
+		"method": "POST",
 		"path": "reminders.add"
 	},
 	"reminders.complete": {
-		"method": "GET",
+		"method": "POST",
 		"path": "reminders.complete"
 	},
 	"reminders.delete": {
-		"method": "GET",
+		"method": "POST",
 		"path": "reminders.delete"
 	},
 	"reminders.info": {
@@ -456,7 +696,7 @@
 		"path": "search.messages"
 	},
 	"stars.add": {
-		"method": "GET",
+		"method": "POST",
 		"path": "stars.add"
 	},
 	"stars.list": {
@@ -464,7 +704,7 @@
 		"path": "stars.list"
 	},
 	"stars.remove": {
-		"method": "GET",
+		"method": "POST",
 		"path": "stars.remove"
 	},
 	"team.accessLogs": {
@@ -488,15 +728,15 @@
 		"path": "team.profile.get"
 	},
 	"usergroups.create": {
-		"method": "GET",
+		"method": "POST",
 		"path": "usergroups.create"
 	},
 	"usergroups.disable": {
-		"method": "GET",
+		"method": "POST",
 		"path": "usergroups.disable"
 	},
 	"usergroups.enable": {
-		"method": "GET",
+		"method": "POST",
 		"path": "usergroups.enable"
 	},
 	"usergroups.list": {
@@ -504,7 +744,7 @@
 		"path": "usergroups.list"
 	},
 	"usergroups.update": {
-		"method": "GET",
+		"method": "POST",
 		"path": "usergroups.update"
 	},
 	"usergroups.users.list": {
@@ -512,7 +752,7 @@
 		"path": "usergroups.users.list"
 	},
 	"usergroups.users.update": {
-		"method": "GET",
+		"method": "POST",
 		"path": "usergroups.users.update"
 	},
 	"users.conversations": {
@@ -544,15 +784,15 @@
 		"path": "users.lookupByEmail"
 	},
 	"users.setActive": {
-		"method": "GET",
+		"method": "POST",
 		"path": "users.setActive"
 	},
 	"users.setPhoto": {
-		"method": "GET",
+		"method": "POST",
 		"path": "users.setPhoto"
 	},
 	"users.setPresence": {
-		"method": "GET",
+		"method": "POST",
 		"path": "users.setPresence"
 	},
 	"users.profile.get": {
@@ -560,7 +800,35 @@
 		"path": "users.profile.get"
 	},
 	"users.profile.set": {
-		"method": "GET",
+		"method": "POST",
 		"path": "users.profile.set"
+	},
+	"views.open": {
+		"method": "POST",
+		"path": "views.open"
+	},
+	"views.publish": {
+		"method": "POST",
+		"path": "views.publish"
+	},
+	"views.push": {
+		"method": "POST",
+		"path": "views.push"
+	},
+	"views.update": {
+		"method": "POST",
+		"path": "views.update"
+	},
+	"workflows.stepCompleted": {
+		"method": "POST",
+		"path": "workflows.stepCompleted"
+	},
+	"workflows.stepFailed": {
+		"method": "POST",
+		"path": "workflows.stepFailed"
+	},
+	"workflows.updateStep": {
+		"method": "POST",
+		"path": "workflows.updateStep"
 	}
 }
