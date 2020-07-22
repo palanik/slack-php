@@ -115,7 +115,7 @@ $response = $slack->chat->postMessage(array(
 * [admin->conversations->setTeams](https://api.slack.com/methods/admin.conversations.setTeams)
 
 ### admin.conversations.whitelist
-> This is deprecated. Use `admin.conversations.restrictAccess` instead.
+> DEPRECATED: Use `admin.conversations.restrictAccess` instead.
 * [admin->conversations->whitelist->add](https://api.slack.com/methods/admin.conversations.whitelist.add)
 * [admin->conversations->whitelist->listGroupsLinkedToChannel](https://api.slack.com/methods/admin.conversations.whitelist.listGroupsLinkedToChannel)
 * [admin->conversations->whitelist->remove](https://api.slack.com/methods/admin.conversations.whitelist.remove)
@@ -211,7 +211,7 @@ $response = $slack->chat->postMessage(array(
 * [calls->participants->remove](https://api.slack.com/methods/calls.participants.remove)
 
 ### channels
-> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `convrsations` instead.
+> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `conversations` instead.
 * [channels->archive](https://api.slack.com/methods/channels.archive)
 * [channels->create](https://api.slack.com/methods/channels.create)
 * [channels->history](https://api.slack.com/methods/channels.history)
@@ -295,7 +295,7 @@ $response = $slack->chat->postMessage(array(
 * [files->remote->update](https://api.slack.com/methods/files.remote.update)
 
 ### groups
-> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `convrsations` instead.
+> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `conversations` instead.
 * [groups->archive](https://api.slack.com/methods/groups.archive)
 * [groups->create](https://api.slack.com/methods/groups.create)
 * [groups->createChild](https://api.slack.com/methods/groups.createChild)
@@ -314,7 +314,7 @@ $response = $slack->chat->postMessage(array(
 * [groups->unarchive](https://api.slack.com/methods/groups.unarchive)
 
 ### im
-> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `convrsations` instead.
+> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `conversations` instead.
 * [im->close](https://api.slack.com/methods/im.close)
 * [im->history](https://api.slack.com/methods/im.history)
 * [im->list](https://api.slack.com/methods/im.list)
@@ -326,7 +326,7 @@ $response = $slack->chat->postMessage(array(
 * [migration->exchange](https://api.slack.com/methods/migration.exchange)
 
 ### mpim
-> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `convrsations` instead.
+> DEPRECATED: These will stop functioning in February 2021 and will not work with newly created apps after June 10th, 2020. Use `conversations` instead.
 * [mpim->close](https://api.slack.com/methods/mpim.close)
 * [mpim->history](https://api.slack.com/methods/mpim.history)
 * [mpim->list](https://api.slack.com/methods/mpim.list)
