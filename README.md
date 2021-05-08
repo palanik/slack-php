@@ -5,6 +5,12 @@
 [![Latest Stable Version](https://poser.pugx.org/wrapi/slack/v/stable)](https://packagist.org/packages/wrapi/slack)
 [![License](https://poser.pugx.org/wrapi/slack/license)](https://github.com/palanik/slack-php/blob/master/LICENSE)
 
+## Installation
+```sh
+$ composer require "wrapi/slack:*"
+```
+
+
 ## Usage
 Create a slack client with API token to connect to Slack Web API.
 
