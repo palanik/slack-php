@@ -7,10 +7,8 @@ class slack extends \wrapi\wrapi {
 
         $opts = array(
             "headers" => array(
-                "User-Agent" => "slack-wrapi"
-            ),
-            "query" => array(
-                "token" => $token
+                "User-Agent" => "slack-wrapi",
+                "Authorization" => "Bearer ". $token
             )
         );
 
