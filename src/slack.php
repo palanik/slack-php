@@ -20,5 +20,3 @@ class slack extends \wrapi\wrapi {
     }
 
 }
-
-?>
